@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Numbers 可視化・分析ツール</h1>
+    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <Header></Header>
+    <Top></Top>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import Header from '@/components/common/Header';
+import Footer from '@/components/common/Footer';
+import Top from '@/components/Top';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Footer,
+    Top,
   }
 }
 </script>
