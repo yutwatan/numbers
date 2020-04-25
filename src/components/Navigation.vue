@@ -32,7 +32,7 @@
         {name: 'Numbers 4', icon: 'mdi-vuetify'},
       ]
     })
-  }
+  };
 </script>
 
 <style scoped>
