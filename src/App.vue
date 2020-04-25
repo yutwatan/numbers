@@ -1,60 +1,45 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-navigation-drawer app v-model="drawer" clipped>
+      <Navigation></Navigation>
+    </v-navigation-drawer>
+
+    <v-app-bar app color="primary" dark clipped-left>
+      <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <v-toolbar-title>Numbers 可視化・分析ツール</v-toolbar-title>
       </div>
-
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <v-btn text>Support</v-btn>
+      <div>
+        <v-btn text>Help</v-btn>
+      </div>
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <Dashboard></Dashboard>
     </v-content>
+
+    <v-footer app color="primary" dark>
+      &copy; 2020 yutwatan
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Navigation from '@/components/Navigation';
+import Dashboard from '@/components/Dashboard';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Navigation,
+    Dashboard,
   },
 
   data: () => ({
-    //
+    drawer: null,
   }),
 };
 </script>
