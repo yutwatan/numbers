@@ -11,7 +11,7 @@
     <v-divider></v-divider>
 
     <v-list nav>
-      <v-list-item v-for="nav in nav_list" :key="nav.name">
+      <v-list-item v-for="nav in nav_list" :key="nav.name" :to="nav.link">
         <v-list-item-icon>
           <v-icon>{{nav.icon}}</v-icon>
         </v-list-item-icon>
@@ -28,8 +28,8 @@
     name: 'Navigation',
     data: () => ({
       nav_list: [
-        {name: 'Numbers 3', icon: 'mdi-vuetify'},
-        {name: 'Numbers 4', icon: 'mdi-vuetify'},
+        {name: 'Numbers 3', icon: 'mdi-vuetify', link: '/numbers3'},
+        {name: 'Numbers 4', icon: 'mdi-vuetify', link: '/numbers4'},
       ]
     })
   };
