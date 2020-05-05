@@ -28,8 +28,8 @@
     name: 'Navigation',
     data: () => ({
       nav_list: [
-        {name: 'Numbers 3', icon: 'mdi-vuetify', link: '/numbers3'},
-        {name: 'Numbers 4', icon: 'mdi-vuetify', link: '/numbers4'},
+        {name: 'Numbers 3', icon: 'mdi-numeric-3-box-multiple', link: '/numbers3'},
+        {name: 'Numbers 4', icon: 'mdi-numeric-4-box-multiple', link: '/numbers4'},
       ]
     })
   };
