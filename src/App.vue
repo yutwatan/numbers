@@ -9,6 +9,7 @@
       <div class="d-flex align-center">
         <v-toolbar-title>
           <router-link to="/" tag="span" style="cursor: pointer">
+            <v-icon>mdi-podium-gold</v-icon>
             Numbers 可視化・分析ツール
           </router-link>
         </v-toolbar-title>
