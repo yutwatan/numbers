@@ -88,7 +88,7 @@
         }
       },
       getNumbersData: async function () {
-        const url = 'http://localhost:3000/number/' +
+        const url = 'http://52.198.226.201:3000/number/' +
           this.inputNumber + '?type=' + this.kind;
 
         try {
