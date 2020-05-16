@@ -108,7 +108,7 @@
     },
     methods: {
       getNumbersData: async function () {
-        const url = 'http://localhost:3000/number?from=' +
+        const url = 'http://52.198.226.201:3000/number?from=' +
           this.from + '&to=' + this.to + '&type=' + this.kind;
 
         try {
