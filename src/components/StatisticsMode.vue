@@ -67,7 +67,7 @@
     },
     methods: {
       getModeData: async function () {
-        const url = 'http://52.198.226.201:3000/number/top3/' + this.kind;
+        const url = 'https://be.yutwatan.work/number/top3/' + this.kind;
 
         try {
           const response = await axios.get(url);
