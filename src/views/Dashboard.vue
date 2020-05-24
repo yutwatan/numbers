@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>Dashboard</h1>
+    <h1>ダッシュボード</h1>
 
     <v-row class="text-center">
       <v-col cols="12" sm="6" md="6">

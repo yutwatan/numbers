@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>最頻値</h3>
+    <h3>最頻値 Top3（桁毎）</h3>
     <section v-if="errored">
       <p>バックエンドサーバとの通信でエラーが発生しました</p>
     </section>
