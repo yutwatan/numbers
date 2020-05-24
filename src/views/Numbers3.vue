@@ -16,6 +16,12 @@
       </v-col>
     </v-row>
 
+    <v-row class="text-center">
+      <v-col cols="12" sm="6" md="4">
+        <StatisticsModeAll v-bind:kind="3" v-bind:show-menu="true"></StatisticsModeAll>
+      </v-col>
+    </v-row>
+
   </v-container>
 </template>
 
@@ -23,12 +29,14 @@
   import RecentlyResults from '@/components/RecentlyResults';
   import SearchNumber from '@/components/SearchNumber';
   import StatisticsMode from '@/components/StatisticsMode';
+  import StatisticsModeAll from '@/components/StatisticsModeAll';
   export default {
     name: 'Numbers3',
     components: {
       RecentlyResults,
       SearchNumber,
       StatisticsMode,
+      StatisticsModeAll,
     }
   };
 </script>
